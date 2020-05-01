@@ -43,7 +43,7 @@ def bbc_scraper(url):
         c = b
         while att[c] != ',':
             c=c+1
-        publish_date = (att[b+16:b+26])
+        publish_date = (att[b+16:b+26]) #Originally I iterated to make it dynamic, but this way made the string neater. 
     else:
         publish_date = str(article.publish_date)
         
